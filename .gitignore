@@ -1,0 +1,8 @@
+# Informations confidentielles
+.env
+
+# Dépendances Node.js
+node_modules/
+
+# Logs
+*.log

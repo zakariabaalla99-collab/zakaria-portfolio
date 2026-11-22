@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio of Zakaria, Full Stack Web Developer. Découvrez mes compétences, mes projets et mes réalisations.">
+    <meta name="author" content="Zakaria Baalla">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b1120">
+
+    <title>Zakaria | Développeur Web Full Stack</title>
+    <meta name="description"
+      id="metaDescription"
+      content="Portfolio professionnel de Zakaria, développeur Web Full Stack.">
+
+    <meta property="og:title" content="Zakaria | Full Stack Web Developer">
+    <meta property="og:description" content="Découvrez mon portfolio, mes compétences et mes projets web.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Police Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                Z<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="navHome">Accueil</a></li>
+                <li><a href="#about" data-i18n="navAbout">À propos</a></li>
+                <li><a href="#skills" data-i18n="navSkills">Compétences</a></li>
+                <li><a href="#projects" data-i18n="navProjects">Projets</a></li>
+                <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeBtn" class="theme-btn" aria-label="Changer le thème">
+                    <i class="fas fa-sun"></i>
+                </button>
+
+                <button id="languageBtn" class="language-btn">
+                    EN
+                </button>
+
+                <a href="#contact" class="nav-contact" data-i18n="navHire">
+                    Me contacter
+                </a>
+            </div>
+
+            <button class="menu-btn" id="menuBtn"
+                aria-label="Ouvrir le menu"
+                data-i18n="menuLabel">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero container" id="home">
+
+            <div class="hero-content">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    <span data-i18n="available">Disponible pour de nouveaux projets</span>
+                </div>
+
+                <p class="hero-intro" data-i18n="hello">
+                    Bonjour, je suis
+                </p>
+
+                <h1>
+                    Zakaria<span class="accent">.</span>
+                </h1>
+
+                <h2>
+                    <span id="typingText">Développeur Web Full Stack</span>
+                    <span class="typing-cursor">|</span>
+                </h2>
+
+                <p class="hero-description" data-i18n="heroDescription">
+                    Je crée des expériences web modernes,
+                    performantes et adaptées aux besoins
+                    des entreprises et des particuliers.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary" data-i18n="seeProjects">
+                        Découvrir mes projets →
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline" data-i18n="contactMe">
+                        Me contacter
+                    </a>
+
+                    <a href="documents/CV-ZAKARIA BAALLA.pdf"
+                        class="btn btn-outline"
+                        download>
+                        <i class="fas fa-download"></i>
+                        <span data-i18n="downloadCV">Télécharger mon CV</span>
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/zakariabaalla99-collab"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/zakaria-baalla-a56406450/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="profile-container">
+                    <div class="profile-glow"></div>
+
+                    <img
+                        src="image/zakaria.png"
+                        alt="Photo de Zakaria"
+                        class="profile-image"
+                    >
+
+                    <div class="profile-badge">
+                        <span class="status-dot"></span>
+                        <span data-i18n="profileBadge">Développeur Full Stack</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="section container" id="about">
+
+            <div class="section-heading">
+                <span data-i18n="sectionAbout">01 / À PROPOS</span>
+                <h2 data-i18n="aboutTitle">À propos de moi</h2>
+            </div>
+
+            <div class="about-content">
+                <p data-i18n="aboutDescription">
+                    Je suis Zakaria, développeur Web Full Stack
+                    passionné par la création de sites web modernes.
+                    J'aime transformer des idées en expériences
+                    numériques simples, élégantes et efficaces.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- STATISTICS -->
+<section class="stats container">
+
+    <div class="stat-card">
+        <h3 class="counter" data-target="4">0</h3>
+        <p data-i18n="statSkills">Technologies</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 class="counter" data-target="1">0</h3>
+        <p data-i18n="statProjects">Projet en cours</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>100%</h3>
+        <p data-i18n="statMotivation">Motivation</p>
+    </div>
+
+</section>
+
+        <!-- SKILLS -->
+        <section class="section container" id="skills">
+
+            <div class="section-heading">
+                <span data-i18n="sectionSkills">02 / COMPÉTENCES</span>
+                <h2 data-i18n="skillsTitle">Mes compétences</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <span>01</span>
+                    <h3>HTML5</h3>
+                    <p data-i18n="htmlDesc">Structure des pages web</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>02</span>
+                    <h3>CSS3</h3>
+                    <p data-i18n="cssDesc">Design et responsive</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>03</span>
+                    <h3>JavaScript</h3>
+                    <p data-i18n="jsDesc">Interactions et fonctionnalités</p>
+                </div>
+
+                <div class="skill-card">
+                    <span>04</span>
+                    <h3>Node.js</h3>
+                    <p data-i18n="nodeDesc">Développement Backend</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="section container" id="projects">
+
+            <div class="section-heading">
+                <span data-i18n="sectionWork">03 / PROJETS</span>
+                <h2 data-i18n="projectsTitle">Mes projets</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-number" data-i18n="projectNumberOne">PROJET 01</div>
+                    <div class="project-preview">01</div>
+                    <h3>Restaurant Alhambra</h3>
+                    <p data-i18n="projectDescription">
+                        Site web de restaurant avec menu,
+                        commandes et interface d'administration.
+                    </p>
+                    <span class="project-status">
+                        <i class="fas fa-code"></i>
+                        <span data-i18n="projectStatus">
+                            Projet en cours de développement
+                        </span>
+                    </span>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number" data-i18n="projectNumberTwo">PROJET 02</div>
+                    <div class="project-preview">02</div>
+                    <h3 data-i18n="projectTwo">Projet à venir</h3>
+                    <p data-i18n="comingSoon">
+                        Un nouveau projet sera bientôt présenté ici.
+                    </p>
+                    <div class="tags">
+                        <span>Web</span>
+                        <span>Development</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section container" id="contact">
+
+            <div class="section-heading">
+                <span data-i18n="sectionContact">04 / CONTACT</span>
+                <h2 data-i18n="contactTitle">Travaillons ensemble</h2>
+            </div>
+
+            <div class="contact-content">
+
+                <p data-i18n="contactDescription">
+                    Vous avez une idée ou un projet ?
+                    N'hésitez pas à me contacter.
+                </p>
+
+                
+<form id="contactForm" class="contact-form">
+
+    <div class="form-group">
+        <label for="contactName">Nom complet</label>
+        <input
+            type="text"
+            id="contactName"
+            name="name"
+            placeholder="Votre nom"
+            maxlength="100"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="contactEmail">Adresse email</label>
+        <input
+            type="email"
+            id="contactEmail"
+            name="email"
+            placeholder="Votre adresse email"
+            maxlength="254"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="contactSubject">Sujet</label>
+        <input
+            type="text"
+            id="contactSubject"
+            name="subject"
+            placeholder="Sujet de votre message"
+            maxlength="150"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="contactMessage">Votre message</label>
+        <textarea
+            id="contactMessage"
+            name="message"
+            placeholder="Écrivez votre message ici..."
+            rows="6"
+            maxlength="5000"
+            required
+        ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="sendMessageBtn">
+        <i class="fas fa-paper-plane"></i>
+        Envoyer le message
+    </button>
+
+    <p id="formStatus" role="status" aria-live="polite"></p>
+
+</form>
+
+                
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>© 2026 Zakaria. <span data-i18n="rights">Tous droits réservés.</span></p>
+
+            <a href="#home" data-i18n="backTop">Retour en haut ↑</a>
+
+        </div>
+
+    </footer>
+
+
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
